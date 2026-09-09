@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
-// import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
 
-// const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const firaCode = localFont({
+  src: "../../public/Fira_Code/FiraCode-VariableFont_wght.ttf",
+  variable: "--font-fira-code",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,7 +15,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={cn("h-full", "antialiased", "font-sans")}>
+    <html
+      lang="en"
+      className={cn("h-full", "antialiased", "font-sans", firaCode.variable)}
+    >
       <body className="min-h-full">
         <main className="bg-blue-500 max-w-3xl mx-auto flex flex-col min-h-screen">
           {children}
