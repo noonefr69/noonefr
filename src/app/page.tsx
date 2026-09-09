@@ -1,11 +1,9 @@
-import { ModeToggle } from "@/components/toggle-mode";
-import { Button } from "@/components/ui/button";
+import HeaderContainer from "@/components/header/container";
 
 export default function Home() {
   return (
-    <div>
-      <Button>wazzaup</Button>
-      <ModeToggle />
+    <div className="px-4">
+      <HeaderContainer />
     </div>
   );
 }
