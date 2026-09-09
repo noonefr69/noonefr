@@ -97,10 +97,10 @@
     --muted-foreground: #8a8680;
     --accent: #8ea4a2;
     --accent-foreground: #181616;
-    --destructive: #E46876;
+    --destructive: #e46876;
     --border: #363330;
     --input: #363330;
-    --ring: #7FB4CA;
+    --ring: #7fb4ca;
     --chart-1: #c4b28a;
     --chart-2: #8ea4a2;
     --chart-3: #8a9a7b;
@@ -113,7 +113,7 @@
     --sidebar-accent: #2a2726;
     --sidebar-accent-foreground: #c5c9c5;
     --sidebar-border: #363330;
-    --sidebar-ring: #7FB4CA;
+    --sidebar-ring: #7fb4ca;
 }
 
 @layer base {
@@ -125,5 +125,16 @@
     }
     html {
         @apply font-sans;
+        scrollbar-width: none;
+    }
+    html::-webkit-scrollbar {
+        display: none;
+    }
+
+    .hide-scrollbar {
+        scrollbar-width: none;
+    }
+    .hide-scrollbar::-webkit-scrollbar {
+        display: none;
     }
 }
