@@ -6,29 +6,11 @@ import { Controller, useForm } from "react-hook-form";
 import * as z from "zod";
 
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import {
-  Field,
-  FieldDescription,
-  FieldError,
-  FieldGroup,
-  FieldLabel,
-} from "@/components/ui/field";
+import { Field, FieldGroup } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
-import {
-  InputGroup,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroupTextarea,
-} from "@/components/ui/input-group";
+import { InputGroup, InputGroupTextarea } from "@/components/ui/input-group";
 import { toast } from "../ui/toast";
+import { postGuestBook } from "@/app/actions/post-guestbook";
 
 const formSchema = z.object({
   username: z.string().min(1, "").max(15, ""),
@@ -37,6 +19,8 @@ const formSchema = z.object({
 });
 
 export function PostMessage() {
+  const [isPending, startTransition] = React.useTransition();
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -47,11 +31,33 @@ export function PostMessage() {
   });
 
   function onSubmit(data: z.infer<typeof formSchema>) {
-    // toast.add({
-    //   username2: data.username,
-    //   description: "Sunday, December 3 at 9:00 AM",
-    // });
-    console.log(data);
+    startTransition(async () => {
+      try {
+        const action = await postGuestBook(data);
+
+        if (!action.success) {
+          toast.add({
+            type: "error",
+            priority: "high",
+            description: action.error,
+          });
+          return;
+        }
+
+        toast.add({
+          type: "success",
+          description: "message created",
+        });
+        form.reset();
+      } catch (err) {
+        console.error(err);
+        toast.add({
+          type: "error",
+          priority: "high",
+          description: "something gone wrong",
+        });
+      }
+    });
   }
 
   return (
@@ -116,7 +122,7 @@ export function PostMessage() {
             )}
           />
           <Button type="submit" form="guestbookform" className="col-span-3">
-            Submit
+            {isPending ? "load" : "Submit"}
           </Button>
         </div>
       </FieldGroup>
