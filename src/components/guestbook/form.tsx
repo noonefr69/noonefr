@@ -109,6 +109,7 @@ export function PostMessage() {
                     rows={1}
                     className="min-h-2 w-full resize-none flex-1"
                     aria-invalid={fieldState.invalid}
+                    maxLength={90}
                   />
                 </InputGroup>
               </Field>
