@@ -13,8 +13,7 @@ export default function Home() {
         <div className="col-span-9 md:col-span-3">
           <GuestBookContainer />
         </div>
-        <div className="col-span-4">grid one</div>
-        <div className="col-span-5">grid one</div>
+        <div className="col-span-9">grid one</div>
       </section>
     </div>
   );

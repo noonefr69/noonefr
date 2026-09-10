@@ -19,7 +19,7 @@ export default function WorkItem({ work }: { work: Work }) {
   return (
     <Link href={work.url} target="_blank" rel="noopener noreferrer">
       <Item
-        className="hover:bg-accent/5 hover:border-primary/50 duration-150"
+        className="hover:bg-accent/5 py-4 hover:border-primary duration-150"
         variant={"outline"}
       >
         <ItemMedia variant="icon">
