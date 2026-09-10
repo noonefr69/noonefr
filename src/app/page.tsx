@@ -1,4 +1,4 @@
-import GuestBookContainer from "@/components/guest-book/container";
+import GuestBookContainer from "@/components/guestbook/container";
 import HeaderContainer from "@/components/header/container";
 import WorkExpContainer from "@/components/works/container";
 
