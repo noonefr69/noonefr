@@ -1,15 +1,18 @@
+import GuestBookContainer from "@/components/guest-book/container";
 import HeaderContainer from "@/components/header/container";
-import WorkExp from "@/components/work-exp";
+import WorkExpContainer from "@/components/works/container";
 
 export default function Home() {
   return (
     <div className="px-4">
       <HeaderContainer />
       <section className="mt-12 grid gap-6 grid-cols-9">
-        <div className="md:col-span-7 col-span-9">
-          <WorkExp />
+        <div className="md:col-span-6 col-span-9">
+          <WorkExpContainer />
         </div>
-        <div className="col-span-9 md:col-span-2">grid one</div>
+        <div className="col-span-9 md:col-span-3">
+          <GuestBookContainer />
+        </div>
         <div className="col-span-4">grid one</div>
         <div className="col-span-5">grid one</div>
       </section>

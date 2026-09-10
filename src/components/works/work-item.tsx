@@ -7,9 +7,9 @@ import {
   ItemMedia,
   ItemTitle,
 } from "@/components/ui/item";
-import { workIcons } from "@/components/work-icons";
 import { fmtDate } from "@/utils/format-date";
 import worksExp from "@/data/work.json";
+import { workIcons } from "./work-icons";
 
 type Work = (typeof worksExp.worksExp)[number];
 
