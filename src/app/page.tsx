@@ -1,3 +1,4 @@
+import GitHubContainer from "@/components/github/container";
 import GuestBookContainer from "@/components/guestbook/container";
 import HeaderContainer from "@/components/header/container";
 import WorkExpContainer from "@/components/works/container";
@@ -16,7 +17,9 @@ export default function Home() {
           <GuestBookContainer />
         </div>
 
-        <div className="col-span-9 md:col-span-6">grid one</div>
+        <div className="col-span-9 md:col-span-6">
+          <GitHubContainer />
+        </div>
       </section>
     </div>
   );

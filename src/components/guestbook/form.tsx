@@ -125,7 +125,7 @@ export function PostMessage() {
           <Button
             type="submit"
             form="guestbookform"
-            className="col-span-3 w-full min-w-[1rem]"
+            className="col-span-3 w-full min-w-4"
           >
             {isPending ? <Spinner /> : "Submit"}
           </Button>
