@@ -6,21 +6,9 @@ import { useTheme } from "next-themes";
 import { Card, CardContent } from "@/components/ui/card";
 import { ActivityCalendar } from "react-activity-calendar";
 
-const LIGHT_COLORS = [
-  "#ece7df", // muted/background
-  "#c0d0c8",
-  "#91b5a4",
-  "#71998b",
-  "#5a8a82", // accent
-];
+const LIGHT_COLORS = ["#ece7df", "#c0d0c8", "#91b5a4", "#71998b", "#5a8a82"];
 
-const DARK_COLORS = [
-  "#2a2726", // muted/background
-  "#29443b",
-  "#315e50",
-  "#427565",
-  "#5a8a82", // accent
-];
+const DARK_COLORS = ["#2a2726", "#29443b", "#315e50", "#427565", "#5a8a82"];
 
 type Activity = {
   date: string;
@@ -33,6 +21,7 @@ export default function GitHubContainer() {
   const year = String(currentYear);
   const [data, setData] = useState<Activity[]>([]);
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     async function fetchData() {
       setLoading(true);
@@ -57,6 +46,7 @@ export default function GitHubContainer() {
     }
     fetchData();
   }, [year]);
+
   return (
     <>
       <Card className="bg-transparent p-0 relative min-w-0 overflow-visible flex-1 min-h-56 justify-center ">

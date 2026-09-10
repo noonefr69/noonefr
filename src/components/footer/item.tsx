@@ -21,7 +21,7 @@ export default function FooterItem({ social }: { social: SocialProps }) {
     <Button
       variant={"outline"}
       size={"icon"}
-      className="opacity-70 duration-100 hover:opacity-100"
+      className="opacity-70 duration-100 hover:opacity-100 bg-transparent!"
       nativeButton={false}
       render={<Link target="_blank" href={social.url}></Link>}
     >
