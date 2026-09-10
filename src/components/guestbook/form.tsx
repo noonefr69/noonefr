@@ -57,7 +57,7 @@ export function PostMessage() {
   return (
     <form
       id="guestbookform"
-      className="w-full "
+      className="w-full px-"
       onSubmit={form.handleSubmit(onSubmit)}
     >
       <FieldGroup className="flex items-center gap-2">
@@ -71,7 +71,7 @@ export function PostMessage() {
                   {...field}
                   id="form-rhf-demo-title"
                   aria-invalid={fieldState.invalid}
-                  placeholder=""
+                  placeholder="username"
                   autoComplete="off"
                   className="w-full flex-1"
                 />
@@ -88,8 +88,8 @@ export function PostMessage() {
                   type="checkbox"
                   checked={field.value}
                   onChange={(e) => field.onChange(e.target.checked)}
-                  value={undefined}
                   required
+                  value={undefined}
                   aria-invalid={fieldState.invalid}
                 />
               </Field>
@@ -105,8 +105,7 @@ export function PostMessage() {
                 <InputGroup>
                   <InputGroupTextarea
                     {...field}
-                    id="form-rhf-demo-description"
-                    placeholder=""
+                    placeholder="message"
                     rows={1}
                     className="min-h-2 w-full resize-none flex-1"
                     aria-invalid={fieldState.invalid}
