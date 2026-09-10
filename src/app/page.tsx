@@ -8,17 +8,14 @@ export default function Home() {
       <HeaderContainer />
 
       <section className="mt-12 grid grid-cols-9 gap-6">
-        {/* Left top */}
         <div className="col-span-9 md:col-span-6">
           <WorkExpContainer />
         </div>
 
-        {/* Right: spans both left rows */}
         <div className="col-span-9 md:col-span-3 md:row-span-2">
           <GuestBookContainer />
         </div>
 
-        {/* Left bottom */}
         <div className="col-span-9 md:col-span-6">grid one</div>
       </section>
     </div>
