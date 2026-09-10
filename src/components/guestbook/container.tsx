@@ -8,7 +8,7 @@ export default async function GuestBookContainer() {
   const guestbooks: ChatzProps[] = await rawGuestbook.json();
 
   return (
-    <Card className="max-h-80 gap-2 h-80 bg-transparent relative overflow-visible ring-border">
+    <Card className="h-full gap-2 bg-transparent relative overflow-visible ring-border">
       <Card className="text-sm font-semibold absolute px-3 py-1 bg-background -top-3.5 left-6 ring-border">
         Guestbook
       </Card>
