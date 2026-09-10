@@ -6,7 +6,7 @@ import WorkItem from "./work-item";
 export default function WorkExpContainer() {
   const works = sortWorksDesc(worksExp.worksExp);
   return (
-    <Card className="bg-transparent relative overflow-visible ring-border">
+    <Card className="max-h-80 h-80 bg-transparent relative overflow-visible ring-border">
       <Card className="text-sm font-semibold absolute px-3 py-1 bg-background -top-3.5 left-6 ring-border">
         Works
       </Card>
