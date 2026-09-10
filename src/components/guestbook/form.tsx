@@ -11,6 +11,7 @@ import { Input } from "@/components/ui/input";
 import { InputGroup, InputGroupTextarea } from "@/components/ui/input-group";
 import { toast } from "../ui/toast";
 import { postGuestBook } from "@/app/actions/post-guestbook";
+import { Spinner } from "../ui/spinner";
 
 const formSchema = z.object({
   username: z.string().min(1, "").max(15, ""),
@@ -67,7 +68,7 @@ export function PostMessage() {
       onSubmit={form.handleSubmit(onSubmit)}
     >
       <FieldGroup className="flex items-center gap-2">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 w-full">
           <Controller
             name="username"
             control={form.control}
@@ -102,7 +103,7 @@ export function PostMessage() {
             )}
           />
         </div>
-        <div className="grid grid-cols-9 items-center gap-2">
+        <div className="w-full grid grid-cols-9 items-center gap-2">
           <Controller
             name="message"
             control={form.control}
@@ -121,8 +122,12 @@ export function PostMessage() {
               </Field>
             )}
           />
-          <Button type="submit" form="guestbookform" className="col-span-3">
-            {isPending ? "load" : "Submit"}
+          <Button
+            type="submit"
+            form="guestbookform"
+            className="col-span-3 w-full min-w-[1rem]"
+          >
+            {isPending ? <Spinner /> : "Submit"}
           </Button>
         </div>
       </FieldGroup>
