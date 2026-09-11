@@ -49,7 +49,7 @@ export default function GitHubContainer() {
 
   return (
     <>
-      <Card className="bg-transparent p-0 relative min-w-0 overflow-visible flex-1 min-h-56 justify-center ">
+      <Card className="bg-transparent p-0 px-4 relative min-w-0 overflow-visible flex-1 min-h-56 justify-center ">
         <CardContent className="p-0 flex items-center justify-center">
           {loading ? (
             <Spinner className="size-10" />

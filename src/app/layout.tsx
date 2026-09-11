@@ -29,7 +29,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           enableSystem
           disableTransitionOnChange
         >
-          <main className="max-w-3xl mx-auto flex flex-col justify-center min-h-screen">
+          <main className="max-w-4xl mx-auto flex flex-col justify-center min-h-screen">
             {children}
             <Toaster />
           </main>
