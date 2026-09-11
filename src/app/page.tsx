@@ -1,6 +1,5 @@
 import FooterContainer from "@/components/footer/container";
 import GitHubContainer from "@/components/github/container";
-import GuestBookContainer from "@/components/guestbook/container";
 import HeaderContainer from "@/components/header/container";
 import WorkExpContainer from "@/components/works/container";
 
@@ -13,9 +12,7 @@ export default function Home() {
         <div className="col-span-9 md:col-span-6">
           <WorkExpContainer />
         </div>
-        <div className="col-span-9 md:col-span-3 ">
-          {/*<GuestBookContainer />*/}
-        </div>
+        <div className="col-span-9 md:col-span-3 "></div>
         <div className="col-span-9 md:col-span-9">
           <GitHubContainer />
         </div>
