@@ -1,13 +1,5 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
-import {
-  Item,
-  ItemActions,
-  ItemContent,
-  ItemDescription,
-  ItemMedia,
-  ItemTitle,
-} from "@/components/ui/item";
 import Link from "next/link";
 
 interface SocialProps {

@@ -13,10 +13,10 @@ export default function Home() {
         <div className="col-span-9 md:col-span-6">
           <WorkExpContainer />
         </div>
-        <div className="col-span-9 md:col-span-3 md:row-span-2">
-          <GuestBookContainer />
+        <div className="col-span-9 md:col-span-3 ">
+          {/*<GuestBookContainer />*/}
         </div>
-        <div className="col-span-9 md:col-span-6">
+        <div className="col-span-9 md:col-span-9">
           <GitHubContainer />
         </div>
       </section>
