@@ -19,7 +19,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", "font-sans", firaCode.variable)}
+      className={cn("h-full", "antialiased", "font-sans", firaCode.className)}
       suppressHydrationWarning
     >
       <body className="min-h-full">

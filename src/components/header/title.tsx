@@ -3,7 +3,6 @@ export default function Title() {
     <div className="flex flex-col">
       <h3 className="text-lg lg:text-xl flex gap-0.5 items-center mb-2 font-semibold">
         ~$ whoami
-        {/*<div className="h-5 w-0.75 rounded bg-accent animate-pulse" />*/}
       </h3>
       <h1 className="flex items-center text-2xl lg:text-3xl font-semibold mb-2 sm:mb-4">
         Hey, I{"'"}m Kasra - frontend eng.
