@@ -32,7 +32,7 @@ export default function WorkItem({ work }: { work: Work }) {
         </ItemMedia>
 
         <ItemContent className="min-w-0">
-          <ItemTitle className="block w-full min-w-0 truncate">
+          <ItemTitle className="block w-full font-bold min-w-0 truncate">
             {work.title}
           </ItemTitle>
 

@@ -1,3 +1,4 @@
+import EventsContainer from "@/components/events/container";
 import FooterContainer from "@/components/footer/container";
 import GitHubContainer from "@/components/github/container";
 import HeaderContainer from "@/components/header/container";
@@ -12,7 +13,9 @@ export default function Home() {
         <div className="col-span-9 md:col-span-6">
           <WorkExpContainer />
         </div>
-        <div className="col-span-9 md:col-span-3 "></div>
+        <div className="col-span-9 md:col-span-3">
+          <EventsContainer />
+        </div>
         <div className="col-span-9 md:col-span-9">
           <GitHubContainer />
         </div>

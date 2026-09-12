@@ -1,0 +1,58 @@
+{
+  "events": [
+    {
+      "icon": "Cake",
+      "title": "Born",
+      "date": "2006-10-26",
+      "url": ""
+    },
+    {
+      "icon": "/icons/javascript.svg",
+      "title": "Learned JavaScript",
+      "date": "2024-02-12",
+      "url": "https://en.wikipedia.org/wiki/JavaScript"
+    },
+    {
+      "icon": "/icons/react.svg",
+      "title": "Learned React",
+      "date": "2024-03-06",
+      "url": "https://react.dev"
+    },
+    {
+      "icon": "/icons/nextjs.svg",
+      "title": "Learned Next.js",
+      "date": "2024-03-06",
+      "url": "https://nextjs.org"
+    },
+    {
+      "icon": "/socials/github.svg",
+      "title": "Joined GitHub",
+      "date": "2024-05-07",
+      "url": "https://github.com/noonefr69"
+    },
+    {
+      "icon": "/icons/typescript.svg",
+      "title": "Learned TypeScript",
+      "date": "2024-08-11",
+      "url": "https://www.typescriptlang.org/"
+    },
+    {
+      "icon": "/icons/vercel.svg",
+      "title": "Joined Vercel",
+      "date": "2024-12-12",
+      "url": "https://vercel.com"
+    },
+    {
+      "icon": "/icons/tux.svg",
+      "title": "Switched to Linux",
+      "date": "2025-06-18",
+      "url": "https://linuxmint.com/"
+    },
+    {
+      "icon": "Rocket",
+      "title": "Launched Portfolio",
+      "date": "2026-09-07",
+      "url": "https://github.com/noonefr69/nooneportfolio"
+    }
+  ]
+}
