@@ -32,7 +32,7 @@ export default function GitHubContainer() {
         const today = new Date();
         const todayStr = `${today.getFullYear()}-${pad(today.getMonth() + 1)}-${pad(today.getDate())}`;
         const cutoff = new Date();
-        cutoff.setMonth(cutoff.getMonth() - 6);
+        cutoff.setMonth(cutoff.getMonth() - 9);
         const cutoffStr = `${cutoff.getFullYear()}-${pad(cutoff.getMonth() + 1)}-${pad(cutoff.getDate())}`;
         const filtered = result.filter(
           (activity) => activity.date >= cutoffStr && activity.date <= todayStr,
@@ -50,6 +50,9 @@ export default function GitHubContainer() {
   return (
     <>
       <Card className="bg-transparent p-0 px-4 relative min-w-0 overflow-visible flex-1 min-h-56 justify-center ">
+        <Card className="text-sm font-semibold absolute px-3 py-1 bg-background -top-3.5 left-6 ring-border">
+          Commits
+        </Card>
         <CardContent className="p-0 flex items-center justify-center">
           {loading ? (
             <Spinner className="size-10" />
