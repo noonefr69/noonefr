@@ -22,7 +22,7 @@ export default function FooterItem({ social }: { social: SocialProps }) {
         alt={social.label}
         width={1980}
         height={1080}
-        className="w-4 dark:invert aspect-square"
+        className="w-4 invert aspect-square"
       />
     </Button>
   );

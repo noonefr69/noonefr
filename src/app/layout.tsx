@@ -22,7 +22,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={cn("h-full", "antialiased", "font-sans", firaCode.className)}
       suppressHydrationWarning
     >
-      <body className="min-h-full">
+      <body className="min-h-full dark">
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

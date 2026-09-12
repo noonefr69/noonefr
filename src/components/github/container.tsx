@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 import { Card, CardContent } from "@/components/ui/card";
 import { ActivityCalendar } from "react-activity-calendar";
 
-const LIGHT_COLORS = ["#ece7df", "#c0d0c8", "#91b5a4", "#71998b", "#5a8a82"];
+const LIGHT_COLORS = ["#2a2726", "#29443b", "#315e50", "#427565", "#5a8a82"];
 
 const DARK_COLORS = ["#2a2726", "#29443b", "#315e50", "#427565", "#5a8a82"];
 
