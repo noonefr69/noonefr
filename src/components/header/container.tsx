@@ -10,7 +10,7 @@ export default function HeaderContainer() {
         alt="me frfr"
         width={1980}
         height={1080}
-        className="hidden sm:block sm:w-24 lg:w-32 aspect-square object-cover border-4 duration-150 hover:border-primary border-border rounded-full"
+        className="hidden sm:block sm:w-24 lg:w-32 aspect-square object-cover ring-4 ring-primary duration-150 rounded-full"
       />
     </header>
   );
