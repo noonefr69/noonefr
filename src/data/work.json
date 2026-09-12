@@ -1,0 +1,34 @@
+{
+  "worksExp": [
+    {
+      "title": "cdin, the text editor",
+      "date": "2026-08-25",
+      "url": "https://m-mdy-m.github.io/cdin/",
+      "icon": "FileCode2"
+    },
+    {
+      "title": "Twit the clone of X (twitter)",
+      "date": "2025-09-15",
+      "url": "https://twit-drab.vercel.app",
+      "icon": "AtSign"
+    },
+    {
+      "title": "Online super market",
+      "date": "2026-07-15",
+      "url": "https://mohosseinimarket.vercel.app/",
+      "icon": "ShoppingCart"
+    },
+    {
+      "title": "Tech book club landing page",
+      "date": "2025-02-12",
+      "url": "https://tech-landing-page-blue.vercel.app/",
+      "icon": "BookOpen"
+    },
+    {
+      "title": "wtia, media player",
+      "date": "2026-07-25",
+      "url": "https://wtia.vercel.app/",
+      "icon": "Music"
+    }
+  ]
+}
