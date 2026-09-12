@@ -32,10 +32,10 @@ export default function EventItem({ event }: { event: Event }) {
                 alt={event.title}
                 width={1980}
                 height={1080}
-                className={`size-3.5 invert`}
+                className="size-3.5 invert group-hover:opacity-100 opacity-75 duration-150"
               />
             ) : (
-              <Icon className="size-3.5" />
+              <Icon className="size-3.5 group-hover:opacity-100 opacity-75 duration-150" />
             )}
           </Button>
         </ItemMedia>
