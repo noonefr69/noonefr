@@ -7,7 +7,13 @@ import { useTheme } from "next-themes";
 import { Card, CardContent } from "@/components/ui/card";
 import { ActivityCalendar } from "react-activity-calendar";
 
-// const COLORS = ["#111111", "#444444", "#777777", "#aaaaaa", "#ffffff"];
+const ACTIVITY_COLORS = [
+  "var(--muted)",
+  "var(--accent)",
+  "var(--muted-foreground)",
+  "var(--primary)",
+  "var(--foreground)",
+];
 
 type Activity = {
   date: string;
@@ -48,7 +54,7 @@ export default function GitHubContainer() {
 
   return (
     <>
-      <Card className="bg-transparent p-0 px-4 relative min-w-0 overflow-visible flex-1 min-h-56 justify-center ">
+      <Card className="bg-transparent p-0 px-4 relative min-w-0 overflow-visible flex-1 min-h-56 justify-center ring-border">
         <Card className="text-sm font-semibold absolute px-3 py-1 bg-background -top-3.5 left-6 ring-border">
           Commits
         </Card>
@@ -59,10 +65,7 @@ export default function GitHubContainer() {
             <>
               <ActivityCalendar
                 data={data}
-                theme={{
-                  light: ["#deddda", "#1a5fb4", "#1c71d8", "#3584e4", "#62a0ea"],
-                  dark: ["#241f31", "#1a5fb4", "#1c71d8", "#3584e4", "#99c1f1"],
-                }}
+                theme={{ light: ACTIVITY_COLORS, dark: ACTIVITY_COLORS }}
                 colorScheme={resolvedTheme === "dark" ? "dark" : "light"}
                 tooltips={{
                   activity: {

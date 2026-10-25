@@ -14,9 +14,9 @@ export const socials = [
     label: "x (twitter)",
     icon: "/socials/x.svg",
   },
-  {
-    url: "https://web.bale.ai/chat?uid=139719284https://web.bale.ai/chat?uid=139719284",
-    label: "bale",
-    icon: "/socials/bale.svg",
-  },
+  // {
+  //   url: "https://web.bale.ai/chat?uid=139719284https://web.bale.ai/chat?uid=139719284",
+  //   label: "bale",
+  //   icon: "/socials/bale.svg",
+  // },
 ];
